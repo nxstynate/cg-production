@@ -2,7 +2,7 @@ Composition {
 	CurrentTime = 42,
 	RenderRange = { 0, 70 },
 	GlobalRange = { 0, 100 },
-	CurrentID = 245,
+	CurrentID = 335,
 	HiQ = true,
 	PlaybackUpdateMode = 0,
 	Version = "Fusion Studio 17.4.6 build 4",
@@ -16,581 +16,11 @@ Composition {
 		"C:\\Users\\Paul\\Downloads\\gin-x-juice-test.mov"
 	},
 	Tools = {
-		ViewLayerCombined = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.Combined.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.Combined.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.Combined.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 247.5 } },
-		},
-		ViewLayerEnv = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.Env.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.Env.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.Env.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 742.5 } },
-		},
-		ViewLayerNormal = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.Normal.X" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.Normal.Y" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.Normal.Z" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 973.5 } },
-		},
-		ViewLayerTransInd = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.TransInd.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.TransInd.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.TransInd.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -220, -115.5 } },
-		},
-		ViewLayerTransCol = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.TransCol.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.TransCol.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.TransCol.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { 0, -115.5 } },
-		},
-		ViewLayerDepth = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.Combined.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.Combined.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.Depth.Z" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 577.5 } },
-		},
-		ViewLayerCryptoObject01 = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.CryptoObject01.r" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.CryptoObject01.g" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.CryptoObject01.b" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.CryptoObject01.a" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 412.5 } },
-		},
-		ViewLayerVolumeDir = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.VolumeDir.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.VolumeDir.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.VolumeDir.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 181.5 } },
-		},
-		ViewLayerCryptoMaterial01 = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.CryptoMaterial01.r" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.CryptoMaterial01.g" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.CryptoMaterial01.b" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.CryptoMaterial01.a" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 280.5 } },
-		},
-		ViewLayerEmit = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.Emit.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.Emit.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.Emit.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { 55, 412.5 } },
-		},
-		ViewLayerCryptoObject00 = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.CryptoObject00.r" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.CryptoObject00.g" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.CryptoObject00.b" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.CryptoObject00.a" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 346.5 } },
-		},
-		ViewLayerVolumeInd = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.VolumeInd.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.VolumeInd.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.VolumeInd.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 247.5 } },
-		},
-		ViewLayerDiffCol = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.DiffCol.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.DiffCol.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.DiffCol.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { 385, 775.5 } },
-		},
-		ViewLayerCryptoObject02 = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.CryptoObject02.r" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.CryptoObject02.g" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.CryptoObject02.b" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.CryptoObject02.a" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 445.5 } },
-		},
-		ViewLayerCryptoMaterial02 = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.CryptoMaterial02.r" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.CryptoMaterial02.g" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.CryptoMaterial02.b" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.CryptoMaterial02.a" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 346.5 } },
-		},
-		ViewLayerPosition = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.Position.X" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.Position.Y" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.Position.Z" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 82.5 } },
-		},
-		ViewLayerTransDir = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.TransDir.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.TransDir.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.TransDir.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -110, -115.5 } },
-		},
-		ViewLayerNoisyImage = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			NameSet = true,
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.Noisy Image.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.Noisy Image.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.Noisy Image.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Noisy Image.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { -55, 874.5 } },
-		},
-		Loader1 = Loader {
-			Clips = {
-				Clip {
-					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
-					FormatID = "OpenEXRFormat",
-					Length = 71,
-					LengthSetManually = true,
-					TrimIn = 0,
-					TrimOut = 70,
-					ExtendFirst = 0,
-					ExtendLast = 0,
-					Loop = 1,
-					AspectMode = 0,
-					Depth = 0,
-					TimeCode = 0,
-					GlobalStart = 0,
-					GlobalEnd = 70
-				}
-			},
-			Inputs = {
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.Channels"] = Input { Value = 1, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.Combined.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.Combined.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.Combined.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { 715, 1567.5 } },
-		},
 		ViewLayerVector = Loader {
 			Clips = {
 				Clip {
 					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
 					FormatID = "OpenEXRFormat",
 					Length = 71,
 					LengthSetManually = true,
@@ -619,11 +49,11 @@ Composition {
 			},
 			ViewInfo = OperatorInfo { Pos = { 385, 1567.5 } },
 		},
-		ViewLayerDiffInd = Loader {
+		ViewLayerGlossCol = Loader {
 			Clips = {
 				Clip {
 					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
 					FormatID = "OpenEXRFormat",
 					Length = 71,
 					LengthSetManually = true,
@@ -642,18 +72,18 @@ Composition {
 			NameSet = true,
 			Inputs = {
 				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.DiffInd.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.DiffInd.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.DiffInd.B" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.GlossCol.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.GlossCol.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.GlossCol.B" }, },
 				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
 			},
-			ViewInfo = OperatorInfo { Pos = { 165, 874.5 } },
+			ViewInfo = OperatorInfo { Pos = { 385, 973.5 } },
 		},
-		ViewLayerDiffDir = Loader {
+		ViewLayerGlossDir = Loader {
 			Clips = {
 				Clip {
 					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
 					FormatID = "OpenEXRFormat",
 					Length = 71,
 					LengthSetManually = true,
@@ -672,18 +102,18 @@ Composition {
 			NameSet = true,
 			Inputs = {
 				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.DiffDir.R" }, },
-				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.DiffDir.G" }, },
-				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.DiffDir.B" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.GlossDir.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.GlossDir.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.GlossDir.B" }, },
 				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
 			},
-			ViewInfo = OperatorInfo { Pos = { 275, 775.5 } },
+			ViewInfo = OperatorInfo { Pos = { 275, 1006.5 } },
 		},
 		ViewLayerCryptoMaterial00 = Loader {
 			Clips = {
 				Clip {
 					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
 					FormatID = "OpenEXRFormat",
 					Length = 71,
 					LengthSetManually = true,
@@ -709,11 +139,131 @@ Composition {
 			},
 			ViewInfo = OperatorInfo { Pos = { 660, 379.5 } },
 		},
+		ViewLayerGlossInd = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 71,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 70,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 70
+				}
+			},
+			NameSet = true,
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.GlossInd.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.GlossInd.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.GlossInd.B" }, },
+				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 165, 1105.5 } },
+		},
+		ViewLayerDiffCol = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 71,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 70,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 70
+				}
+			},
+			NameSet = true,
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.DiffCol.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.DiffCol.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.DiffCol.B" }, },
+				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 385, 775.5 } },
+		},
+		ViewLayerDiffDir = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 71,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 70,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 70
+				}
+			},
+			NameSet = true,
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.DiffDir.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.DiffDir.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.DiffDir.B" }, },
+				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 275, 775.5 } },
+		},
+		Loader1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 71,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 70,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 70
+				}
+			},
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.Channels"] = Input { Value = 1, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.Combined.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.Combined.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.Combined.B" }, },
+				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 715, 1567.5 } },
+		},
 		ViewLayerUV = Loader {
 			Clips = {
 				Clip {
 					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
 					FormatID = "OpenEXRFormat",
 					Length = 71,
 					LengthSetManually = true,
@@ -740,6 +290,36 @@ Composition {
 			},
 			ViewInfo = OperatorInfo { Pos = { 330, 478.5 } },
 		},
+		ViewLayerDiffInd = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 71,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 70,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 70
+				}
+			},
+			NameSet = true,
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.DiffInd.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.DiffInd.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.DiffInd.B" }, },
+				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 165, 874.5 } },
+		},
 		Loader2 = Loader {
 			Clips = {
 				Clip {
@@ -765,16 +345,16 @@ Composition {
 			},
 			ViewInfo = OperatorInfo { Pos = { 495, 181.5 } },
 		},
-		ViewLayerGlossInd = Loader {
+		ViewLayerGlossInd_1 = Loader {
 			Clips = {
 				Clip {
 					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
 					FormatID = "OpenEXRFormat",
-					Length = 71,
+					Length = 2,
 					LengthSetManually = true,
 					TrimIn = 0,
-					TrimOut = 70,
+					TrimOut = 1,
 					ExtendFirst = 0,
 					ExtendLast = 0,
 					Loop = 1,
@@ -782,7 +362,7 @@ Composition {
 					Depth = 0,
 					TimeCode = 0,
 					GlobalStart = 0,
-					GlobalEnd = 70
+					GlobalEnd = 1
 				}
 			},
 			NameSet = true,
@@ -791,20 +371,19 @@ Composition {
 				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.GlossInd.R" }, },
 				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.GlossInd.G" }, },
 				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.GlossInd.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
 			},
-			ViewInfo = OperatorInfo { Pos = { 165, 1105.5 } },
+			ViewInfo = OperatorInfo { Pos = { 1650, 1204.5 } },
 		},
-		ViewLayerGlossDir = Loader {
+		ViewLayerTransInd_1 = Loader {
 			Clips = {
 				Clip {
 					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
 					FormatID = "OpenEXRFormat",
-					Length = 71,
+					Length = 2,
 					LengthSetManually = true,
 					TrimIn = 0,
-					TrimOut = 70,
+					TrimOut = 1,
 					ExtendFirst = 0,
 					ExtendLast = 0,
 					Loop = 1,
@@ -812,7 +391,36 @@ Composition {
 					Depth = 0,
 					TimeCode = 0,
 					GlobalStart = 0,
-					GlobalEnd = 70
+					GlobalEnd = 1
+				}
+			},
+			NameSet = true,
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.TransInd.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.TransInd.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.TransInd.B" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1650, 1435.5 } },
+		},
+		ViewLayerGlossDir_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 2,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 1,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 1
 				}
 			},
 			NameSet = true,
@@ -821,20 +429,19 @@ Composition {
 				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.GlossDir.R" }, },
 				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.GlossDir.G" }, },
 				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.GlossDir.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
 			},
-			ViewInfo = OperatorInfo { Pos = { 275, 1006.5 } },
+			ViewInfo = OperatorInfo { Pos = { 1815, 1072.5 } },
 		},
-		ViewLayerGlossCol = Loader {
+		ViewLayerTransDir_1 = Loader {
 			Clips = {
 				Clip {
 					ID = "Clip1",
-					Filename = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
 					FormatID = "OpenEXRFormat",
-					Length = 71,
+					Length = 2,
 					LengthSetManually = true,
 					TrimIn = 0,
-					TrimOut = 70,
+					TrimOut = 1,
 					ExtendFirst = 0,
 					ExtendLast = 0,
 					Loop = 1,
@@ -842,7 +449,152 @@ Composition {
 					Depth = 0,
 					TimeCode = 0,
 					GlobalStart = 0,
-					GlobalEnd = 70
+					GlobalEnd = 1
+				}
+			},
+			NameSet = true,
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.TransDir.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.TransDir.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.TransDir.B" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1815, 1303.5 } },
+		},
+		ViewLayerDiffInd_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 2,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 1,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 1
+				}
+			},
+			NameSet = true,
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.DiffInd.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.DiffInd.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.DiffInd.B" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1815, 874.5 } },
+		},
+		ViewLayerEmit_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 2,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 1,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 1
+				}
+			},
+			NameSet = true,
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.Emit.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.Emit.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.Emit.B" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1925, 1699.5 } },
+		},
+		ViewLayerDiffDir_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 2,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 1,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 1
+				}
+			},
+			NameSet = true,
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.DiffDir.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.DiffDir.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.DiffDir.B" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1980, 742.5 } },
+		},
+		ViewLayerTransCol_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 2,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 1,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 1
+				}
+			},
+			NameSet = true,
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.TransCol.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.TransCol.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.TransCol.B" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 1980, 1303.5 } },
+		},
+		ViewLayerGlossCol_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 2,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 1,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 1
 				}
 			},
 			NameSet = true,
@@ -851,486 +603,67 @@ Composition {
 				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.GlossCol.R" }, },
 				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.GlossCol.G" }, },
 				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.GlossCol.B" }, },
-				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.Combined.A" }, },
 			},
-			ViewInfo = OperatorInfo { Pos = { 385, 973.5 } },
+			ViewInfo = OperatorInfo { Pos = { 1980, 1072.5 } },
 		},
-		ColorCorrector2 = ColorCorrector {
-			Inputs = {
-				ColorRanges = Input {
-					Value = ColorCurves {
-						Curves = {
-							{
-								Points = {
-									{ 0, 1 },
-									{ 0.4, 0.2 },
-									{ 0.6, 0 },
-									{ 1, 0 }
-								}
-							},
-							{
-								Points = {
-									{ 0, 0 },
-									{ 0.4, 0 },
-									{ 0.6, 0.2 },
-									{ 1, 1 }
-								}
-							}
-						}
-					},
-				},
-				HistogramIgnoreTransparent = Input { Value = 1, },
+		ViewLayerDiffCol_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 2,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 1,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 1
+				}
 			},
-			ViewInfo = OperatorInfo { Pos = { 770, 1303.5 } },
-		},
-		CCRed = ColorCorrector {
 			NameSet = true,
 			Inputs = {
-				Channel = Input { Value = 1, },
-				MasterGreenGain = Input { Value = 0, },
-				MasterBlueGain = Input { Value = 0, },
-				ColorRanges = Input {
-					Value = ColorCurves {
-						Curves = {
-							{
-								Points = {
-									{ 0, 1 },
-									{ 0.4, 0.2 },
-									{ 0.6, 0 },
-									{ 1, 0 }
-								}
-							},
-							{
-								Points = {
-									{ 0, 0 },
-									{ 0.4, 0 },
-									{ 0.6, 0.2 },
-									{ 1, 1 }
-								}
-							}
-						}
-					},
-				},
-				HistogramIgnoreTransparent = Input { Value = 1, },
-				Input = Input {
-					SourceOp = "PipeRouter1_1",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 2095.5 } },
-		},
-		ScaleRed = Scale {
-			NameSet = true,
-			Inputs = {
-				HiQOnly = Input { Value = 0, },
-				PixelAspect = Input { Value = { 1, 1 }, },
-				Input = Input {
-					SourceOp = "CCRed",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 2194.5 } },
-		},
-		PipeRouter3_1 = PipeRouter {
-			Inputs = {
-				Input = Input {
-					SourceOp = "PipeRouter1_1",
-					Source = "Output",
-				},
-			},
-			ViewInfo = PipeRouterInfo { Pos = { 385, 2029.5 } },
-		},
-		CCGreen = ColorCorrector {
-			NameSet = true,
-			Inputs = {
-				Channel = Input { Value = 2, },
-				MasterRedGain = Input { Value = 0, },
-				MasterBlueGain = Input { Value = 0, },
-				ColorRanges = Input {
-					Value = ColorCurves {
-						Curves = {
-							{
-								Points = {
-									{ 0, 1 },
-									{ 0.4, 0.2 },
-									{ 0.6, 0 },
-									{ 1, 0 }
-								}
-							},
-							{
-								Points = {
-									{ 0, 0 },
-									{ 0.4, 0 },
-									{ 0.6, 0.2 },
-									{ 1, 1 }
-								}
-							}
-						}
-					},
-				},
-				HistogramIgnoreTransparent = Input { Value = 1, },
-				Input = Input {
-					SourceOp = "PipeRouter3_1",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 385, 2161.5 } },
-		},
-		ScaleGreen = Scale {
-			NameSet = true,
-			Inputs = {
-				XSize = Input { Value = 1.0025, },
-				HiQOnly = Input { Value = 0, },
-				PixelAspect = Input { Value = { 1, 1 }, },
-				Input = Input {
-					SourceOp = "CCGreen",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 385, 2293.5 } },
-		},
-		MergeRedGreen = Merge {
-			NameSet = true,
-			Inputs = {
-				Background = Input {
-					SourceOp = "ScaleRed",
-					Source = "Output",
-				},
-				Foreground = Input {
-					SourceOp = "ScaleGreen",
-					Source = "Output",
-				},
-				BurnIn = Input { Value = 1, },
-				PerformDepthMerge = Input { Value = 0, },
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 2293.5 } },
-		},
-		Background2 = Background {
-			Inputs = {
-				GlobalOut = Input { Value = 100, },
-				Width = Input { Value = 1920, },
-				Height = Input { Value = 1920, },
 				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				Type = Input { Value = FuID { "Gradient" }, },
-				TopLeftRed = Input { Value = 0.8, },
-				TopLeftGreen = Input { Value = 0.8, },
-				TopLeftBlue = Input { Value = 0.8, },
-				Start = Input { Value = { -0.188571428571429, -0.551428571428571 }, },
-				End = Input { Value = { 0.551428571428571, 1.57142857142857 }, },
-				Gradient = Input {
-					Value = Gradient {
-						Colors = {
-							[0] = { 0.8, 0.8, 0.8, 1 },
-							[1] = { 0.1, 0.1, 0.1, 1 }
-						}
-					},
-				},
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.DiffCol.R" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.DiffCol.G" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.DiffCol.B" }, },
 			},
-			ViewInfo = OperatorInfo { Pos = { 330, 1798.5 } },
+			ViewInfo = OperatorInfo { Pos = { 2145, 676.5 } },
 		},
-		BrightnessContrast2 = BrightnessContrast {
-			Inputs = {
-				Gain = Input { Value = 1.5, },
-				Input = Input {
-					SourceOp = "Background2",
-					Source = "Output",
-				},
+		ViewLayerCryptoObject00_1 = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
+					FormatID = "OpenEXRFormat",
+					Length = 2,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 1,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 1,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 1
+				}
 			},
-			ViewInfo = OperatorInfo { Pos = { 440, 1798.5 } },
-		},
-		ChannelBooleans1_2 = ChannelBoolean {
+			NameSet = true,
 			Inputs = {
-				Operation = Input { Value = 1, },
-				ToAlpha = Input { Value = 4, },
-				Background = Input {
-					SourceOp = "ViewLayerDiffInd",
-					Source = "Output",
-				},
-				Foreground = Input {
-					SourceOp = "ViewLayerDiffDir",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 275, 874.5 } },
-		},
-		Background1 = Background {
-			Inputs = {
-				GlobalOut = Input { Value = 100, },
-				Width = Input { Value = 1920, },
-				Height = Input { Value = 1920, },
 				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.OpenEXRFormat.RedName"] = Input { Value = FuID { "ViewLayer.CryptoObject00.r" }, },
+				["Clip1.OpenEXRFormat.GreenName"] = Input { Value = FuID { "ViewLayer.CryptoObject00.g" }, },
+				["Clip1.OpenEXRFormat.BlueName"] = Input { Value = FuID { "ViewLayer.CryptoObject00.b" }, },
+				["Clip1.OpenEXRFormat.AlphaName"] = Input { Value = FuID { "ViewLayer.CryptoObject00.a" }, },
 			},
-			ViewInfo = OperatorInfo { Pos = { 715, 775.5 } },
-		},
-		Cryptomatte1 = Fuse.Cryptomatte {
-			Inputs = {
-				Input = Input {
-					SourceOp = "ViewLayerCryptoMaterial00",
-					Source = "Output",
-				},
-				MatteList = Input { Value = "\"can-graphic-001\"", },
-				LayerIndex = Input { Value = 1, },
-				LayerName = Input { Value = "ViewLayer.CryptoMaterial", },
-			},
-			ViewInfo = OperatorInfo { Pos = { 660, 478.5 } },
-			Version = 140
-		},
-		Blur1 = Blur {
-			Inputs = {
-				Filter = Input { Value = FuID { "Fast Gaussian" }, },
-				XBlurSize = Input { Value = 0.6, },
-				Input = Input {
-					SourceOp = "Loader2",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 495, 280.5 } },
-		},
-		BrightnessContrast1 = BrightnessContrast {
-			Inputs = {
-				Brightness = Input { Value = -0.25, },
-				Input = Input {
-					SourceOp = "Blur1",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 495, 379.5 } },
-		},
-		Texture1 = Texture {
-			Inputs = {
-				EffectMask = Input {
-					SourceOp = "Cryptomatte1",
-					Source = "Output",
-				},
-				MultiplyByMask = Input { Value = 1, },
-				Input = Input {
-					SourceOp = "ViewLayerUV",
-					Source = "Output",
-				},
-				Texture = Input {
-					SourceOp = "BrightnessContrast1",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 495, 478.5 } },
-		},
-		PipeRouter2 = PipeRouter {
-			Inputs = {
-				Input = Input {
-					SourceOp = "ViewLayerGlossCol",
-					Source = "Output",
-				},
-			},
-			ViewInfo = PipeRouterInfo { Pos = { 55, 973.5 } },
-		},
-		PipeRouter3 = PipeRouter {
-			Inputs = {
-				Input = Input {
-					SourceOp = "PipeRouter2",
-					Source = "Output",
-				},
-			},
-			ViewInfo = PipeRouterInfo { Pos = { 55, 577.5 } },
-		},
-		ChannelBooleans3 = ChannelBoolean {
-			Inputs = {
-				Operation = Input { Value = 10, },
-				ToAlpha = Input { Value = 4, },
-				Background = Input {
-					SourceOp = "PipeRouter3",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 330, 577.5 } },
-		},
-		Merge2 = Merge {
-			Inputs = {
-				Background = Input {
-					SourceOp = "Texture1",
-					Source = "Output",
-				},
-				Foreground = Input {
-					SourceOp = "ChannelBooleans3",
-					Source = "Output",
-				},
-				ApplyMode = Input { Value = FuID { "Multiply" }, },
-				PerformDepthMerge = Input { Value = 0, },
-			},
-			ViewInfo = OperatorInfo { Pos = { 495, 610.5 } },
-		},
-		Merge1 = Merge {
-			Inputs = {
-				Background = Input {
-					SourceOp = "Background1",
-					Source = "Output",
-				},
-				Foreground = Input {
-					SourceOp = "Merge2",
-					Source = "Output",
-				},
-				PerformDepthMerge = Input { Value = 0, },
-			},
-			ViewInfo = OperatorInfo { Pos = { 495, 775.5 } },
-		},
-		ChannelBooleans1_1_1 = ChannelBoolean {
-			Inputs = {
-				Operation = Input { Value = 6, },
-				ToAlpha = Input { Value = 4, },
-				Background = Input {
-					SourceOp = "ChannelBooleans1_2",
-					Source = "Output",
-				},
-				Foreground = Input {
-					SourceOp = "Merge1",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 385, 874.5 } },
-		},
-		PipeRouter1 = PipeRouter {
-			Inputs = {
-				Input = Input {
-					SourceOp = "ChannelBooleans1_1_1",
-					Source = "Output",
-				},
-			},
-			ViewInfo = PipeRouterInfo { Pos = { 550, 874.5 } },
-		},
-		ChannelBooleans1 = ChannelBoolean {
-			Inputs = {
-				Operation = Input { Value = 1, },
-				ToAlpha = Input { Value = 4, },
-				Background = Input {
-					SourceOp = "ViewLayerGlossInd",
-					Source = "Output",
-				},
-				Foreground = Input {
-					SourceOp = "ViewLayerGlossDir",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 275, 1105.5 } },
-		},
-		ChannelBooleans1_1 = ChannelBoolean {
-			Inputs = {
-				Operation = Input { Value = 6, },
-				ToAlpha = Input { Value = 4, },
-				Background = Input {
-					SourceOp = "ChannelBooleans1",
-					Source = "Output",
-				},
-				Foreground = Input {
-					SourceOp = "ViewLayerGlossCol",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 385, 1105.5 } },
-		},
-		ChannelBooleans2 = ChannelBoolean {
-			Inputs = {
-				Operation = Input { Value = 1, },
-				ToAlpha = Input { Value = 4, },
-				Background = Input {
-					SourceOp = "PipeRouter1",
-					Source = "Output",
-				},
-				Foreground = Input {
-					SourceOp = "ChannelBooleans1_1",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 1105.5 } },
-		},
-		BrightnessContrast3 = BrightnessContrast {
-			Inputs = {
-				Gamma = Input { Value = 1.6, },
-				Contrast = Input { Value = 0.24, },
-				Input = Input {
-					SourceOp = "ChannelBooleans2",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 1204.5 } },
-		},
-		OCIOColorspace1 = OCIOColorSpace {
-			Inputs = {
-				OCIOConfig = Input { Value = "X:\\Dropbox\\2_Library\\3_lighting\\OpenColorIO-Configs\\nuke-default\\config.ocio", },
-				SourceSpace = Input { Value = FuID { "linear" }, },
-				OutputSpace = Input { Value = FuID { "rec709" }, },
-				Look = Input { Value = FuID { "None" }, },
-				Input = Input {
-					SourceOp = "BrightnessContrast3",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 1435.5 } },
-		},
-		ChannelBooleans4 = ChannelBoolean {
-			Inputs = {
-				EffectMask = Input {
-					SourceOp = "Loader1",
-					Source = "Output",
-				},
-				MultiplyByMask = Input { Value = 1, },
-				ToXVector = Input { Value = 5, },
-				ToYVector = Input { Value = 6, },
-				Background = Input {
-					SourceOp = "ViewLayerVector",
-					Source = "Output",
-				},
-				Foreground = Input {
-					SourceOp = "OCIOColorspace1",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 1567.5 } },
-		},
-		VectorMotionBlur1 = VectorMotionBlur {
-			Inputs = {
-				Input = Input {
-					SourceOp = "ChannelBooleans4",
-					Source = "Output",
-				},
-				Vectors = Input {
-					SourceOp = "ChannelBooleans4",
-					Source = "Output",
-				},
-				XScale = Input { Value = 0.5, },
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 1666.5 } },
-		},
-		Merge3 = Merge {
-			Inputs = {
-				Background = Input {
-					SourceOp = "BrightnessContrast2",
-					Source = "Output",
-				},
-				Foreground = Input {
-					SourceOp = "VectorMotionBlur1",
-					Source = "Output",
-				},
-				PerformDepthMerge = Input { Value = 0, },
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 1798.5 } },
-		},
-		PipeRouter1_1 = PipeRouter {
-			CtrlWZoom = false,
-			Inputs = {
-				Input = Input {
-					SourceOp = "Merge3",
-					Source = "Output",
-				},
-			},
-			ViewInfo = PipeRouterInfo { Pos = { 550, 1897.5 } },
-		},
-		PipeRouter2_1 = PipeRouter {
-			Inputs = {
-				Input = Input {
-					SourceOp = "PipeRouter1_1",
-					Source = "Output",
-				},
-			},
-			ViewInfo = PipeRouterInfo { Pos = { 715, 1996.5 } },
+			ViewInfo = OperatorInfo { Pos = { 2640, 775.5 } },
 		},
 		CCBlue = ColorCorrector {
 			NameSet = true,
@@ -1368,6 +701,289 @@ Composition {
 			},
 			ViewInfo = OperatorInfo { Pos = { 715, 2260.5 } },
 		},
+		ChannelBooleans1_1 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 6, },
+				ToAlpha = Input { Value = 4, },
+				Background = Input {
+					SourceOp = "ChannelBooleans1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ViewLayerGlossCol",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 385, 1105.5 } },
+		},
+		VectorMotionBlur1 = VectorMotionBlur {
+			Inputs = {
+				Input = Input {
+					SourceOp = "ChannelBooleans4",
+					Source = "Output",
+				},
+				Vectors = Input {
+					SourceOp = "ChannelBooleans4",
+					Source = "Output",
+				},
+				XScale = Input { Value = 0.5, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 1666.5 } },
+		},
+		BrightnessContrast1 = BrightnessContrast {
+			Inputs = {
+				Brightness = Input { Value = -0.25, },
+				Input = Input {
+					SourceOp = "Blur1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 495, 379.5 } },
+		},
+		ScaleGreen = Scale {
+			NameSet = true,
+			Inputs = {
+				XSize = Input { Value = 1.0025, },
+				HiQOnly = Input { Value = 0, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				Input = Input {
+					SourceOp = "CCGreen",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 385, 2293.5 } },
+		},
+		PipeRouter1 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "ChannelBooleans1_1_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 550, 874.5 } },
+		},
+		CCRed = ColorCorrector {
+			NameSet = true,
+			Inputs = {
+				Channel = Input { Value = 1, },
+				MasterGreenGain = Input { Value = 0, },
+				MasterBlueGain = Input { Value = 0, },
+				ColorRanges = Input {
+					Value = ColorCurves {
+						Curves = {
+							{
+								Points = {
+									{ 0, 1 },
+									{ 0.4, 0.2 },
+									{ 0.6, 0 },
+									{ 1, 0 }
+								}
+							},
+							{
+								Points = {
+									{ 0, 0 },
+									{ 0.4, 0 },
+									{ 0.6, 0.2 },
+									{ 1, 1 }
+								}
+							}
+						}
+					},
+				},
+				HistogramIgnoreTransparent = Input { Value = 1, },
+				Input = Input {
+					SourceOp = "PipeRouter1_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 2095.5 } },
+		},
+		MergeRedGreen = Merge {
+			NameSet = true,
+			Inputs = {
+				Background = Input {
+					SourceOp = "ScaleRed",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ScaleGreen",
+					Source = "Output",
+				},
+				BurnIn = Input { Value = 1, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 2293.5 } },
+		},
+		PipeRouter2 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "ViewLayerGlossCol",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 55, 973.5 } },
+		},
+		Texture1 = Texture {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Cryptomatte1",
+					Source = "Output",
+				},
+				MultiplyByMask = Input { Value = 1, },
+				Input = Input {
+					SourceOp = "ViewLayerUV",
+					Source = "Output",
+				},
+				Texture = Input {
+					SourceOp = "BrightnessContrast1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 495, 478.5 } },
+		},
+		Blur1 = Blur {
+			Inputs = {
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				XBlurSize = Input { Value = 0.6, },
+				Input = Input {
+					SourceOp = "Loader2",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 495, 280.5 } },
+		},
+		PipeRouter1_1 = PipeRouter {
+			CtrlWZoom = false,
+			Inputs = {
+				Input = Input {
+					SourceOp = "Merge3",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 550, 1897.5 } },
+		},
+		ChannelBooleans1_2 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 1, },
+				ToAlpha = Input { Value = 4, },
+				Background = Input {
+					SourceOp = "ViewLayerDiffInd",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ViewLayerDiffDir",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 275, 874.5 } },
+		},
+		FilmGrain1 = FilmGrain {
+			Inputs = {
+				MasterStrength = Input { Value = 0.002, },
+				Input = Input {
+					SourceOp = "MergeBlue",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 2524.5 } },
+		},
+		ScaleRed = Scale {
+			NameSet = true,
+			Inputs = {
+				HiQOnly = Input { Value = 0, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				Input = Input {
+					SourceOp = "CCRed",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 2194.5 } },
+		},
+		Merge1 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Background1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge2",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 495, 775.5 } },
+		},
+		Background2 = Background {
+			Inputs = {
+				GlobalOut = Input { Value = 100, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1920, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Type = Input { Value = FuID { "Gradient" }, },
+				TopLeftRed = Input { Value = 0.8, },
+				TopLeftGreen = Input { Value = 0.8, },
+				TopLeftBlue = Input { Value = 0.8, },
+				Start = Input { Value = { -0.188571428571429, -0.551428571428571 }, },
+				End = Input { Value = { 0.551428571428571, 1.57142857142857 }, },
+				Gradient = Input {
+					Value = Gradient {
+						Colors = {
+							[0] = { 0.8, 0.8, 0.8, 1 },
+							[1] = { 0.1, 0.1, 0.1, 1 }
+						}
+					},
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 330, 1798.5 } },
+		},
+		Merge2 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "Texture1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ChannelBooleans3",
+					Source = "Output",
+				},
+				ApplyMode = Input { Value = FuID { "Multiply" }, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 495, 610.5 } },
+		},
+		PipeRouter3 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "PipeRouter2",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 55, 577.5 } },
+		},
+		PipeRouter3_1 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "PipeRouter1_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 385, 2029.5 } },
+		},
+		ChannelBooleans1 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 1, },
+				ToAlpha = Input { Value = 4, },
+				Background = Input {
+					SourceOp = "ViewLayerGlossInd",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ViewLayerGlossDir",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 275, 1105.5 } },
+		},
 		ScaleBlue = Scale {
 			NameSet = true,
 			Inputs = {
@@ -1380,74 +996,6 @@ Composition {
 				},
 			},
 			ViewInfo = OperatorInfo { Pos = { 715, 2392.5 } },
-		},
-		MergeBlue = Merge {
-			NameSet = true,
-			Inputs = {
-				Background = Input {
-					SourceOp = "MergeRedGreen",
-					Source = "Output",
-				},
-				Foreground = Input {
-					SourceOp = "ScaleBlue",
-					Source = "Output",
-				},
-				BurnIn = Input { Value = 1, },
-				PerformDepthMerge = Input { Value = 0, },
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 2392.5 } },
-		},
-		FilmGrain1 = FilmGrain {
-			Inputs = {
-				MasterStrength = Input { Value = 0.002, },
-				Input = Input {
-					SourceOp = "MergeBlue",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 2524.5 } },
-		},
-		Crop1 = Crop {
-			Inputs = {
-				YOffset = Input { Value = 510, },
-				XSize = Input { Value = 1920, },
-				YSize = Input { Value = 1080, },
-				Input = Input {
-					SourceOp = "FilmGrain1",
-					Source = "Output",
-				},
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 2623.5 } },
-		},
-		Saver1 = Saver {
-			Inputs = {
-				ProcessWhenBlendIs00 = Input { Value = 0, },
-				Clip = Input {
-					Value = Clip {
-						Filename = "C:\\Users\\Paul\\Downloads\\gin-x-juice-test.mov",
-						FormatID = "QuickTimeMovies",
-						Length = 0,
-						Multiframe = true,
-						Saving = true,
-						TrimIn = 0,
-						ExtendFirst = 0,
-						ExtendLast = 0,
-						Loop = 1,
-						AspectMode = 0,
-						Depth = 0,
-						GlobalStart = -2000000000,
-						GlobalEnd = 0
-					},
-				},
-				OutputFormat = Input { Value = FuID { "QuickTimeMovies" }, },
-				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-				Input = Input {
-					SourceOp = "Crop1",
-					Source = "Output",
-				},
-				["QuickTimeMovies.Compression"] = Input { Value = FuID { "H.264_avc1" }, },
-			},
-			ViewInfo = OperatorInfo { Pos = { 550, 2722.5 } },
 		},
 		ColorCorrector1 = ColorCorrector {
 			Inputs = {
@@ -1477,6 +1025,456 @@ Composition {
 				HistogramIgnoreTransparent = Input { Value = 1, },
 			},
 			ViewInfo = OperatorInfo { Pos = { 330, 1336.5 } },
+		},
+		Crop1 = Crop {
+			Inputs = {
+				YOffset = Input { Value = 510, },
+				XSize = Input { Value = 1920, },
+				YSize = Input { Value = 1080, },
+				Input = Input {
+					SourceOp = "FilmGrain1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 2623.5 } },
+		},
+		MergeBlue = Merge {
+			NameSet = true,
+			Inputs = {
+				Background = Input {
+					SourceOp = "MergeRedGreen",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ScaleBlue",
+					Source = "Output",
+				},
+				BurnIn = Input { Value = 1, },
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 2392.5 } },
+		},
+		PipeRouter2_1 = PipeRouter {
+			Inputs = {
+				Input = Input {
+					SourceOp = "PipeRouter1_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = PipeRouterInfo { Pos = { 715, 1996.5 } },
+		},
+		ChannelBooleans1_1_1 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 6, },
+				ToAlpha = Input { Value = 4, },
+				Background = Input {
+					SourceOp = "ChannelBooleans1_2",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Merge1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 385, 874.5 } },
+		},
+		ChannelBooleans4 = ChannelBoolean {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Loader1",
+					Source = "Output",
+				},
+				MultiplyByMask = Input { Value = 1, },
+				ToXVector = Input { Value = 5, },
+				ToYVector = Input { Value = 6, },
+				Background = Input {
+					SourceOp = "ViewLayerVector",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "OCIOColorspace1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 1567.5 } },
+		},
+		Background1 = Background {
+			Inputs = {
+				GlobalOut = Input { Value = 100, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1920, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 715, 775.5 } },
+		},
+		Cryptomatte1 = Fuse.Cryptomatte {
+			Inputs = {
+				Input = Input {
+					SourceOp = "ViewLayerCryptoMaterial00",
+					Source = "Output",
+				},
+				MatteList = Input { Value = "\"can-graphic-001\"", },
+				LayerIndex = Input { Value = 1, },
+				LayerName = Input { Value = "ViewLayer.CryptoMaterial", },
+			},
+			ViewInfo = OperatorInfo { Pos = { 660, 478.5 } },
+			Version = 140
+		},
+		BrightnessContrast3 = BrightnessContrast {
+			Inputs = {
+				Gamma = Input { Value = 1.6, },
+				Contrast = Input { Value = 0.24, },
+				Input = Input {
+					SourceOp = "ChannelBooleans2",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 1204.5 } },
+		},
+		ChannelBooleans2 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 1, },
+				ToAlpha = Input { Value = 4, },
+				Background = Input {
+					SourceOp = "PipeRouter1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ChannelBooleans1_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 1105.5 } },
+		},
+		Merge3 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "BrightnessContrast2",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "VectorMotionBlur1",
+					Source = "Output",
+				},
+				PerformDepthMerge = Input { Value = 0, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 1798.5 } },
+		},
+		BrightnessContrast2 = BrightnessContrast {
+			Inputs = {
+				Gain = Input { Value = 1.5, },
+				Input = Input {
+					SourceOp = "Background2",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 440, 1798.5 } },
+		},
+		CCGreen = ColorCorrector {
+			NameSet = true,
+			Inputs = {
+				Channel = Input { Value = 2, },
+				MasterRedGain = Input { Value = 0, },
+				MasterBlueGain = Input { Value = 0, },
+				ColorRanges = Input {
+					Value = ColorCurves {
+						Curves = {
+							{
+								Points = {
+									{ 0, 1 },
+									{ 0.4, 0.2 },
+									{ 0.6, 0 },
+									{ 1, 0 }
+								}
+							},
+							{
+								Points = {
+									{ 0, 0 },
+									{ 0.4, 0 },
+									{ 0.6, 0.2 },
+									{ 1, 1 }
+								}
+							}
+						}
+					},
+				},
+				HistogramIgnoreTransparent = Input { Value = 1, },
+				Input = Input {
+					SourceOp = "PipeRouter3_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 385, 2161.5 } },
+		},
+		ChannelBooleans3 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 10, },
+				ToAlpha = Input { Value = 4, },
+				Background = Input {
+					SourceOp = "PipeRouter3",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 330, 577.5 } },
+		},
+		OCIOColorspace1 = OCIOColorSpace {
+			Inputs = {
+				OCIOConfig = Input { Value = "X:\\Dropbox\\2_Library\\3_lighting\\OpenColorIO-Configs\\nuke-default\\config.ocio", },
+				SourceSpace = Input { Value = FuID { "linear" }, },
+				OutputSpace = Input { Value = FuID { "rec709" }, },
+				Look = Input { Value = FuID { "None" }, },
+				Input = Input {
+					SourceOp = "BrightnessContrast3",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 1435.5 } },
+		},
+		Saver1 = Saver {
+			Inputs = {
+				ProcessWhenBlendIs00 = Input { Value = 0, },
+				Clip = Input {
+					Value = Clip {
+						Filename = "C:\\Users\\Paul\\Downloads\\gin-x-juice-test.mov",
+						FormatID = "QuickTimeMovies",
+						Length = 0,
+						Multiframe = true,
+						Saving = true,
+						TrimIn = 0,
+						ExtendFirst = 0,
+						ExtendLast = 0,
+						Loop = 1,
+						AspectMode = 0,
+						Depth = 0,
+						TimeCode = 0,
+						GlobalStart = -2000000000,
+						GlobalEnd = 0
+					},
+				},
+				OutputFormat = Input { Value = FuID { "QuickTimeMovies" }, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Input = Input {
+					SourceOp = "Crop1",
+					Source = "Output",
+				},
+				["QuickTimeMovies.Compression"] = Input { Value = FuID { "H.264_avc1" }, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 2722.5 } },
+		},
+		ColorCorrector2 = ColorCorrector {
+			Inputs = {
+				ColorRanges = Input {
+					Value = ColorCurves {
+						Curves = {
+							{
+								Points = {
+									{ 0, 1 },
+									{ 0.4, 0.2 },
+									{ 0.6, 0 },
+									{ 1, 0 }
+								}
+							},
+							{
+								Points = {
+									{ 0, 0 },
+									{ 0.4, 0 },
+									{ 0.6, 0.2 },
+									{ 1, 1 }
+								}
+							}
+						}
+					},
+				},
+				HistogramIgnoreTransparent = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 770, 1303.5 } },
+		},
+		ChannelBooleans1_1_2 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 1, },
+				Background = Input {
+					SourceOp = "ViewLayerGlossInd_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ViewLayerGlossDir_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1815, 1171.5 } },
+		},
+		ChannelBooleans1_2_1 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 1, },
+				Background = Input {
+					SourceOp = "ViewLayerTransInd_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ViewLayerTransDir_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1815, 1435.5 } },
+		},
+		ChannelBooleans1_3 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 1, },
+				Background = Input {
+					SourceOp = "ViewLayerDiffInd_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ViewLayerDiffDir_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1980, 874.5 } },
+		},
+		ChannelBooleans3_1 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 6, },
+				Background = Input {
+					SourceOp = "ChannelBooleans1_1_2",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ViewLayerGlossCol_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1980, 1171.5 } },
+		},
+		ChannelBooleans2_1 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 6, },
+				Background = Input {
+					SourceOp = "ChannelBooleans1_2_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ViewLayerTransCol_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 1980, 1435.5 } },
+		},
+		ChannelBooleans2_2 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 6, },
+				Background = Input {
+					SourceOp = "ChannelBooleans1_3",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ViewLayerDiffCol_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 2145, 874.5 } },
+		},
+		ChannelBooleans4_1 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 1, },
+				Background = Input {
+					SourceOp = "ChannelBooleans3_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ChannelBooleans2_2",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 2145, 1171.5 } },
+		},
+		ChannelBooleans4_1_1 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 1, },
+				Background = Input {
+					SourceOp = "ChannelBooleans2_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ChannelBooleans4_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 2145, 1435.5 } },
+		},
+		OCIOColorspace1_1 = OCIOColorSpace {
+			Inputs = {
+				OCIOConfig = Input { Value = "X:\\Dropbox\\2_Library\\3_lighting\\OpenColorIO-Configs\\nuke-default\\config.ocio", },
+				SourceSpace = Input { Value = FuID { "linear" }, },
+				OutputSpace = Input { Value = FuID { "rec709" }, },
+				Look = Input { Value = FuID { "None" }, },
+				Input = Input {
+					SourceOp = "ChannelBooleans5",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 2145, 1930.5 } },
+		},
+		ChannelBooleans5 = ChannelBoolean {
+			Inputs = {
+				Operation = Input { Value = 1, },
+				Background = Input {
+					SourceOp = "ChannelBooleans4_1_1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "ViewLayerEmit_1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 2145, 1699.5 } },
+		},
+		Cryptomatte1_1 = Fuse.Cryptomatte {
+			Inputs = {
+				Input = Input {
+					SourceOp = "ViewLayerCryptoObject00_1",
+					Source = "Output",
+				},
+				Locator = Input { Value = { 0.398832684824903, 0.604391824592624 }, },
+				MatteList = Input { Value = "\"wood-001\", \"plastic-fanduel-blue\"", },
+				LayerIndex = Input { Value = 1, },
+				LayerName = Input { Value = "ViewLayer.CryptoMaterial", },
+			},
+			ViewInfo = OperatorInfo { Pos = { 2475, 775.5 } },
+			Version = 140
+		},
+		ColorCorrector1_1 = ColorCorrector {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Cryptomatte1_1",
+					Source = "Output",
+				},
+				WheelTintAngle1 = Input { Value = -0.119731893602196, },
+				WheelTintLength1 = Input { Value = 1, },
+				ColorRanges = Input {
+					Value = ColorCurves {
+						Curves = {
+							{
+								Points = {
+									{ 0, 1 },
+									{ 0.4, 0.2 },
+									{ 0.6, 0 },
+									{ 1, 0 }
+								}
+							},
+							{
+								Points = {
+									{ 0, 0 },
+									{ 0.4, 0 },
+									{ 0.6, 0.2 },
+									{ 1, 1 }
+								}
+							}
+						}
+					},
+				},
+				HistogramIgnoreTransparent = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 2310, 775.5 } },
 		}
 	},
 	Frames = {
@@ -1490,82 +1488,82 @@ Composition {
 			Width = 1920,
 			Height = 978,
 			ZoneInfo = {
-				AuxRight = { Expanded = true },
-				Right = { Expanded = true, },
-				Left = { Expanded = false, },
-				AuxLeft = { Expanded = true },
+				["!Right"] = {
+				},
 				["!Left"] = {
 				},
-				["!Right"] = {
-				}
+				AuxLeft = { Expanded = true },
+				Right = { Expanded = true, },
+				Left = { Expanded = false, },
+				AuxRight = { Expanded = true }
 			},
 			ViewInfo = {
-				Keyframes = { Show = false, },
-				LayoutStrip = { Show = true, RatioX = 100, },
-				Inspector = { Show = true, RatioY = 3, RatioX = 100, },
-				Effects = { Show = false, },
+				Viewer1 = { Show = true, RatioY = 0.01, RatioX = 1, },
+				InnerLeft = {
+					RatioX = 0.804467791160387,
+					RatioY = 100,
+				},
+				ActionStrip = { Show = true, RatioX = 100, },
+				InnerBottom = {
+				},
 				Viewer2 = { Show = false, Adjust = true, RatioY = 0.01, MRU = 0, RatioX = 1, },
 				Comments = { Show = false },
-				Clips = { Show = false, },
-				ActionStrip = { Show = true, RatioX = 100, },
-				Time = { Show = true, RatioX = 100, },
-				MediaPool = { Show = false, },
-				Nodes = { Show = true, RatioY = 2, RatioX = 100, },
-				Metadata = { Show = false, },
-				Viewer1 = { Show = true, RatioY = 0.01, RatioX = 1, },
-				Spline = { Show = false, },
-				OuterColumns = {
+				UpperMainSplit = {
+				},
+				UpperSplit = {
 					RatioX = 100,
 					RatioY = 1,
 				},
-				SplineRows = {
+				Time = { Show = true, RatioX = 100, },
+				MediaPool = { Show = false, },
+				InnerRows = {
 					RatioX = 1,
-					RatioY = 100,
-				},
-				OuterRight = {
-					PixelX = 420,
 					RatioY = 100,
 				},
 				ActionColumns = {
 					RatioX = 100,
 					RatioY = 1,
 				},
-				LowerMainSplit = {
+				OuterLeft = {
 				},
+				OuterBottom = {
+				},
+				Keyframes = { Show = false, },
+				InnerRight = {
+				},
+				LayoutStrip = { Show = true, RatioX = 100, },
+				Inspector = { Show = true, RatioY = 3, RatioX = 100, },
 				ActionRows = {
 					RatioX = 1,
 					RatioY = 100,
 				},
-				InnerRight = {
+				LowerMainSplit = {
+				},
+				OuterColumns = {
+					RatioX = 100,
+					RatioY = 1,
+				},
+				Effects = { Show = false, },
+				Clips = { Show = false, },
+				Metadata = { Show = false, },
+				SplineRows = {
+					RatioX = 1,
+					RatioY = 100,
+				},
+				ViewerSplit = {
+					RatioX = 100,
+					RatioY = 1,
+				},
+				Nodes = { Show = true, RatioY = 2, RatioX = 100, },
+				OuterRight = {
+					RatioY = 100,
+					PixelX = 420,
 				},
 				LeftColumns = {
 					RatioX = 100,
 					RatioY = 1,
 				},
-				OuterLeft = {
-				},
-				InnerRows = {
-					RatioX = 1,
-					RatioY = 100,
-				},
-				OuterBottom = {
-				},
-				UpperSplit = {
-					RatioX = 100,
-					RatioY = 1,
-				},
-				UpperMainSplit = {
-				},
-				InnerLeft = {
-					RatioX = 0.804323561583117,
-					RatioY = 100,
-				},
-				InnerBottom = {
-				},
-				ViewerSplit = {
-					RatioX = 100,
-					RatioY = 1,
-				}
+				Spline = { Show = false, }
 			},
 			Views = ordered() {
 				Effects = MultiView {
@@ -1581,7 +1579,6 @@ Composition {
 					},
 					FlowView = FlowView {
 						Flags = {
-							Navigator = true,
 							AutoHideNavigator = true,
 							ForceAll = true,
 							GridSnap = true,
@@ -1592,8 +1589,8 @@ Composition {
 						NavigatorSize = { 200, 140 },
 						Direction = "Vertical",
 						PipeStyle = "Direct",
-						RootScale = 0.176777,
-						RootOffset = { 1393.09, -81.5058 }
+						RootScale = 0.125,
+						RootOffset = { 111.69, 708.191 }
 					}
 				},
 				Keyframes = MultiView {
@@ -1619,7 +1616,7 @@ Composition {
 							AutoSnapTo = "frame",
 							AutoSnapToGuidelines = false,
 							GuidelinesGrabEnabled = true,
-							GuidelinesSnapTo = "none"
+							GuidelinesSnapTo = "frame"
 						},
 						Spreadsheet = { LeftPos = 232, Visible = false }
 					}
@@ -1633,7 +1630,7 @@ Composition {
 						LeftPos = 264,
 						ScaleX = 0.2,
 						ScaleY = 0.00338983050847458,
-						OffsetX = 26.6,
+						OffsetX = 8.2,
 						OffsetY = 0,
 						AutoScaling = "scroll",
 						AutoSnapTo = "frame",
@@ -1807,25 +1804,25 @@ Composition {
 						Viewer = {
 							EnableLUTs = false,
 							LUTPlugin = "FusionViewLUT",
-							NearZ = 0,
+							FitMarginY = 0,
 							FitMarginX = 0,
 							FitMarginType = 0,
 							FarZ = -1000,
-							FitMarginY = 0
+							NearZ = 0
 						}
 					},
 				},
 				LeftView = {
 					Viewer = {
-						Channel = 4294967295,
-						ScaleMode = 1,
 						Region = {
 							Top = 1,
 							Bottom = 0,
 							Enable = true,
 							Right = 1,
-							Left = 0,
+							Left = 0
 						},
+						ScaleMode = 1,
+						Channel = 4294967295
 					},
 					SideB = {
 						PrevCtrlInactiveColor = 4278255360,
@@ -1835,11 +1832,11 @@ Composition {
 						Viewer = {
 							EnableLUTs = false,
 							LUTPlugin = "FusionViewLUT",
-							NearZ = 0,
+							FitMarginY = 0,
 							FitMarginX = 0,
 							FitMarginType = 0,
 							FarZ = -1000,
-							FitMarginY = 0
+							NearZ = 0
 						}
 					},
 				},
@@ -1856,11 +1853,11 @@ Composition {
 						Viewer = {
 							EnableLUTs = false,
 							LUTPlugin = "FusionViewLUT",
-							NearZ = 0,
+							FitMarginY = 0,
 							FitMarginX = 0,
 							FitMarginType = 0,
 							FarZ = -1000,
-							FitMarginY = 0
+							NearZ = 0
 						}
 					}
 				},
@@ -1872,42 +1869,42 @@ Composition {
 				DepthPreview = 3,
 				DepthInteractive = 3,
 			},
-			LastFile = "C:\\Users\\Paul\\Downloads\\frames\\shot-0000.exr",
+			LastFile = "X:\\Dropbox\\1_Projects\\BlackoutLLC\\24021201.episode1_us-soccer-block-party\\4_images\\1_raw\\goorin-bros-0000.exr",
 			Unsorted = {
 				GlobalEnd = 100,
 				RenderSettings = {
 					Configs = {
-						Final = {
-							Quality = true,
-							MotionBlur = true,
-							UpdateMode = "Some",
-							UseNetwork = false,
-							SizeType = 1,
-							CustomWidth = 200,
-							CustomHeight = 160,
-							CustomAspect = true,
-							StepRender = false,
-							StepSize = 5,
-							PriorityClasses = "all",
-							ShowRenderNodes = false
-						},
 						Preview = {
-							Quality = true,
+							StepRender = false,
+							PriorityClasses = "all",
+							ShowRenderNodes = false,
+							StepSize = 5,
+							SizeType = 1,
+							CustomHeight = 160,
+							CustomAspect = true,
+							CustomWidth = 200,
 							MotionBlur = true,
 							UpdateMode = "Some",
 							UseNetwork = false,
+							Quality = true
+						},
+						Final = {
+							StepRender = false,
+							PriorityClasses = "all",
+							ShowRenderNodes = false,
+							StepSize = 5,
 							SizeType = 1,
-							CustomWidth = 200,
 							CustomHeight = 160,
 							CustomAspect = true,
-							StepRender = false,
-							StepSize = 5,
-							PriorityClasses = "all",
-							ShowRenderNodes = false
+							CustomWidth = 200,
+							MotionBlur = true,
+							UpdateMode = "Some",
+							UseNetwork = false,
+							Quality = true
 						}
 					},
-					CurrentConfig = "Final",
-					PreviewConfig = "Preview"
+					PreviewConfig = "Preview",
+					CurrentConfig = "Final"
 				}
 			},
 			Tweaks = {
