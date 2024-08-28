@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MaxHotkeyTransformations Locked="false">
+    <Assign_Hotkey Shortcut="Ctrl+I" Id="951718758-40022"/>
+    <Assign_Hotkey Shortcut="Space" Id="2077580866-40020"/>
+    <Assign_Hotkey Shortcut="Ins" Id="0-226"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+X" Id="0-40368"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+C" Id="0-40109"/>
+    <Assign_Hotkey Shortcut="Ctrl+G" Id="0-40140"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+A" Id="0-40146"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+C" Id="0-40143"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+D" Id="0-40144"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+E" Id="0-40145"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+O" Id="0-40142"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+X" Id="0-40376"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+L" Id="0-40646"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+W" Id="0-202"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+G" Id="0-40141"/>
+    <Assign_Hotkey Shortcut="Alt+M" Id="0-40210"/>
+    <Assign_Hotkey Shortcut="Shift+F3" Id="3450739058-1"/>
+    <Assign_Hotkey Shortcut="E" Id="2040466689-40001"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+I" Id="647394-SelectInstances`Selection"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+L" Id="647394-VRayLightLister`VRay"/>
+    <Assign_Hotkey Shortcut="Shift+`" Id="647394-Show_End_Result_Toggle`Modifier Stack"/>
+    <Assign_Hotkey Shortcut="Shift+D" Id="647394-ESpline_Detach_Spline`Editable Spline Object"/>
+    <Assign_Hotkey Shortcut="Shift+R" Id="647394-ESpline_Refine`Editable Spline Object"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+F" Id="647394-ESpline_Fuse_Vertex`Editable Spline Object"/>
+    <Unassign_Hotkey Shortcut="Alt+R" Id="2077580866-45348"/>
+    <Unassign_Hotkey Shortcut="Ctrl+L" Id="2077580866-40020"/>
+    <Unassign_Hotkey Shortcut="Shift+`" Id="0-40067"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Shift+X" Id="0-401"/>
+    <Unassign_Hotkey Shortcut="Alt+J" Id="0-470"/>
+    <Unassign_Hotkey Shortcut="Shift+F3" Id="3450739058-12"/>
+    <Unassign_Hotkey Shortcut="Y" Id="647394-SmartPlace`Tools"/>
+    <Unassign_Hotkey Shortcut="Ins" Id="647394-PivotMode_Toggle`Tools"/>
+    <Unassign_Hotkey Shortcut="Ctrl+C" Id="647394-PhysicalCamera_CreateFromView`Lights and Cameras"/>
+    <Unassign_Hotkey Shortcut="Ctrl+Shift+C" Id="647394-EPoly_Chamfer`Editable Polygon Object"/>
+    <Assign_Hotkey Shortcut="Ctrl+Q" Description="Select Similar" Id="0-40099"/>
+    <Assign_Hotkey Shortcut="Ctrl+Alt+Shift+S" Description="Save Selected" Id="0-40008"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+I" Description="Import File" Id="0-40010"/>
+    <Assign_Hotkey Shortcut="Ctrl+Shift+M" Description="Merge File" Id="0-40195"/>
+    <Assign_Hotkey Shortcut="Alt+Shift+F" Description="Freeze Selection" Id="0-224"/>
+</MaxHotkeyTransformations>
