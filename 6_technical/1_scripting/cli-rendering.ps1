@@ -19,11 +19,11 @@ $blenderRenderFormat = "OPEN_EXR"
 
 # Define project name
 $projectName = "TEMPLATE_PROJECT_NAME"
+$filenameOutput = $projectName.ToLower()
 
 # Blender Rendering Tasks (Update for each project)
 $blenderTasks = @(
-    # @{ file = "scene-01.blend"; renderPath = "$blenderOutputPath\scene-01"; fileFormat = $blenderRenderFormat; start = 1; end = 10 }
-    # @{ file = "scene-02.blend"; renderPath = "$blenderOutputPath\scene-02"; fileFormat = $blenderRenderFormat; start = 1; end = 5 }
+     @{ file = "$filenameOutput-scene-01.blend"; renderPath = "$blenderOutputPath\$filenameOutput-scene-01"; fileFormat = $blenderRenderFormat; start = 1; end = 10 }
 )
 
 # After Effects Rendering Tasks (Update for each project)
