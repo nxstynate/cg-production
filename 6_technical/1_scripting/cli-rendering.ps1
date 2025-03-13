@@ -7,8 +7,7 @@ $projectBasePath = "X:\LocalProduction\cg-production"
 $aePath = "$projectBasePath\4_images\2_post_production\after_effects"
 $aeFile = "ae-post-production.aep"
 $aeJsxScript = "$projectBasePath\6_technical\1_scripting\cli-rendering-ae.jsx"
-
-# Create a new mail-out directory based on the current date/time
+$aeExtension = "jpeg"
 $aeOutputPath = "$projectBasePath\1_docs\5_mail_out\0000-00-00-00-00-00"
 $aeOutputFormat = "jpg-agx"
 
@@ -16,19 +15,32 @@ $aeOutputFormat = "jpg-agx"
 $blenderFile = "$projectBasePath\3_blender"
 $blenderOutputPath = "$projectBasePath\4_images\1_raw\1_stills"
 $blenderRenderFormat = "OPEN_EXR"
+$blenderExtension = ".blend"
 
 # Define project name
-$projectName = "TEMPLATE_PROJECT_NAME"
-$filenameOutput = $projectName.ToLower()
+$projectName = "INSERT-PROJECT-NAME"
+$projectNameIsLowerCase = $projectName.ToLower()
+$projectSceneName = "insert-scene-name"
 
 # Blender Rendering Tasks (Update for each project)
 $blenderTasks = @(
-     @{ file = "$filenameOutput-scene-01.blend"; renderPath = "$blenderOutputPath\$filenameOutput-scene-01"; fileFormat = $blenderRenderFormat; start = 1; end = 10 }
+     @{ 
+     file = "${projectNameIsLowerCase}-${projectSceneName}${blenderExtension}";
+     renderPath = "$blenderOutputPath\${projectNameIsLowerCase}-${projectSceneName}";
+     fileFormat = $blenderRenderFormat;
+     start = 1;
+     end = 10
+     }
 )
 
 # After Effects Rendering Tasks (Update for each project)
 $aeTasks = @(
-    @{ comp = "comp-01"; start = 0; end = 9; output = "comp-01-.jpeg" }
+    @{ 
+      comp = "${projectNameIsLowerCase}-${projectSceneName}";
+      start = 0;
+      end = 9;
+      output = "${projectNameIsLowerCase}-${projectSceneName}${aeExtension}" 
+      }
 )
 
 # Start Rendering
