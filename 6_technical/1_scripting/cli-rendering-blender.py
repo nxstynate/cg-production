@@ -12,7 +12,7 @@ def set_gpu_device():
     """Ensures only the RTX 4080 is used for rendering and disables the Quadro T1000."""
     
     prefs = bpy.context.preferences.addons['cycles'].preferences
-    prefs.compute_device_type = 'CUDA'  # Use 'OPTIX' if required
+    prefs.compute_device_type = 'OPTIX'  # Use 'CUDA' if required
 
     # Disable all GPUs first
     for device in prefs.devices:
