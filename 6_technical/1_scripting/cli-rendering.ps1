@@ -49,7 +49,7 @@ Write-Output "Rendering project: $projectName"
 
 # Run Blender renders
 foreach ($task in $blenderTasks) {
-   blender42 -b "$blenderFile\$($task.file)" -P $blenderPyScript -o $($task.renderPath) -F $($task.fileFormat) -s $($task.start) -e $($task.end) -a 
+   blender42 -b "$blenderFile\$($task.file)" --python $blenderPyScript -o $($task.renderPath) -F $($task.fileFormat) -s $($task.start) -e $($task.end) -a 
 }
 
 # Run After Effects renders
