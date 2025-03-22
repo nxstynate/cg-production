@@ -6,7 +6,7 @@ def set_render_options():
     """Sets global render options."""
     scene = bpy.context.scene  # Define scene
     scene.render.use_motion_blur = False  # Example setting
-    bpy.context.scene.cycles.samples = 256
+    bpy.context.scene.cycles.samples = 2048
 
 def set_gpu_device():
     """Ensures only the RTX 4080 is used for rendering and disables the Quadro T1000."""
