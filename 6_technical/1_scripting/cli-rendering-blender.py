@@ -93,4 +93,3 @@ def run():
     handle_safe_render()
 
 run()
-    main()
