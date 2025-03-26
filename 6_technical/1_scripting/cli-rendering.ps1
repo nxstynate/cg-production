@@ -43,18 +43,20 @@ $aeTasks = @(
       output = "${projectNameIsLowerCase}-${projectSceneName}${aeExtension}" 
       }
 )
+#
 
 # Start Rendering
 Write-Output "Rendering project: $projectName"
 
 # Run Blender renders
 foreach ($task in $blenderTasks) {
-   blender42 -b "$blenderFile\$($task.file)" --python $blenderPyScript -o $($task.renderPath) -F $($task.fileFormat) -s $($task.start) -e $($task.end) -a 
+   blender42 -b "$blenderFile\$($task.file)" --python $blenderPyScript -o $($task.renderPath) -F $($task.fileFormat) -s $($task.start) -e $($task.end) -a
 }
 
 # Run After Effects renders
 foreach ($task in $aeTasks) {
-    aerender -s "$aeJsxScript" -project "$aePath\$aeFile" -comp "$($task.comp)" -s $($task.start) -e $($task.end) -output "$aeOutputPath\$($task.output)" -OMtemplate "$aeOutputFormat"
+    aerender -project "$aePath\$aeFile" -comp "$($task.comp)" -s $($task.start) -e $($task.end) -output "$aeOutputPath\$($task.output)" -OMtemplate "$aeOutputFormat"
+    #aerender -s "$aeJsxScript" -project "$aePath\$aeFile" -comp "$($task.comp)" -s $($task.start) -e $($task.end) -output "$aeOutputPath\$($task.output)" -OMtemplate "$aeOutputFormat"
 }
 
 Write-Output "$projectName rendering complete."
