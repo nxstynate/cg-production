@@ -1,10 +1,10 @@
 $projectBasePath = "X:\LocalProduction\cg-production"
 $aeProjectPath   = "$projectBasePath\4_images\2_post_production\after_effects"
 $aeFile          = "ae-post-production.aep"
-$aeOutputPath    = "$projectBasePath\1_docs\5_mail_out\0000-00-00-00-00-00"
+$aeisOutput    = "$projectBasePath\1_docs\5_mail_out\0000-00-00-00-00-00"
 $aeOutputFormat  = "jpg-agx"
-$aeRenderConfig  = "$projectBasePath\6_technical\1_scripting\config\aeRenderConfig.psd1"
-$aeJsxScript = "$projectBasePath\6_technical\1_scripting\cli-rendering-ae.jsx"
+$aeRenderConfig  = "$projectBasePath\6_technical\1_scripting\renderConfigAfterFX.psd1"
+# $aeJsxScript = "$projectBasePath\6_technical\1_scripting\cli-rendering-ae.jsx"
 
 $aeTasks = @()
 try
@@ -19,31 +19,33 @@ try
 function Render-AfterEffectsComp
 {
   param (
-    [string]$compName,
-    [int]$startFrame,
-    [int]$endFrame,
-    [string]$outputFileName
+    [string]$isComp,
+    [int]$isS,
+    [int]$isE,
+    [string]$isOutput,
+    [string]$isOmTemplate
   )
 
-  $outputPath = Join-Path $aeOutputPath $outputFileName
+  $isOutput = Join-Path $aeisOutput $isOutput
 
-  Write-Host "🎞️  Rendering AE comp: $compName from $startFrame to $endFrame..."
-
+  Write-Host "🎞️  Rendering AE comp: $isComp from $isS to $isE..."
   aerender -project "$aeProjectPath\$aeFile" `
-    -comp "$compName" `
-    -s $startFrame `
-    -e $endFrame `
-    -output "$outputPath" `
-    -OMtemplate "$aeOutputFormat"
+    -comp "$isComp" `
+    -s $isS `
+    -e $isE `
+    -output "$isOutput" `
+    -OMtemplate "$isOmTemplate"
 }
 
 function Render-AllAfterEffectsComps
 {
   foreach ($task in $aeTasks)
   {
-    Render-AfterEffectsComp -compName $task.comp `
-      -startFrame $task.start `
-      -endFrame $task.end `
-      -outputFileName $task.output
+    # Render-AfterEffectsComp -isComp $task.comp ` -isS $task.start ` -isE $task.end ` -isOutput $task.output -isOmTemplate  "$aeOutputFormat"
+    Render-AfterEffectsComp -isComp "$($task.comp)" -isS $($task.start) -isE $($task.end) -isOutput "$($task.output)" -isOmTemplate  "$aeOutputFormat"
+    # aerender -s "$aeJsxScript" -project "$aePath\$aeFile" -comp "$($task.comp)" -s $($task.start) -e $($task.end) -output "$aeOutputPath\$($task.output)" -OMtemplate "$aeOutputFormat"
+    # aerender -project "$aePath\$aeFile" -comp "$($task.comp)" -s $($task.start) -e $($task.end) -output "$aeisOutput\$($task.output)" -OMtemplate "$aeOutputFormat"
   }
 }
+
+Render-AllAfterEffectsComps

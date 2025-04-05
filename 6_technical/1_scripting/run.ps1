@@ -1,8 +1,8 @@
 
 function runMain
 {
-  & ./renderBlender.ps1
-  # & ./renderAfterFX.ps1
+  # & ./renderBlender.ps1
+  & ./renderAfterFX.ps1
 }
 
 runMain
