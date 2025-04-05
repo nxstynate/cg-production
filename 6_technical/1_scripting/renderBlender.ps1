@@ -4,8 +4,25 @@ $blenderOutputPath   = "$projectBasePath\4_images\1_raw\1_stills"
 $blenderPyScript     = "$projectBasePath\6_technical\1_scripting\renderConfigBlender.py" 
 $blenderRenderFormat = "OPEN_EXR_MULTILAYER"
 $renderConfigPath    = "$projectBasePath\6_technical\1_scripting\renderConfig.psd1"
-
 $blenderTasks = Import-PowerShellDataFile -Path $renderConfigPath
+
+function Clear-ExistingEXRs
+{
+  param (
+    [string]$sceneName
+  )
+  $pattern = "$sceneName*.exr"
+  $searchPath = $blenderOutputPath
+  $exrFiles = Get-ChildItem -Path $searchPath -Filter $pattern -File -ErrorAction SilentlyContinue
+  if ($exrFiles.Count -gt 0)
+  {
+    Write-Host "🧹 Deleting $($exrFiles.Count) EXR files matching '$pattern' in $searchPath..."
+    $exrFiles | Remove-Item -Force
+  } else
+  {
+    Write-Host "✅ No EXR files matching '$pattern' in $searchPath."
+  }
+}
 
 function Render-BlenderScene
 {
@@ -19,6 +36,9 @@ function Render-BlenderScene
 
   $renderOutPath = Join-Path $blenderOutputPath $sceneName
 
+  # 🧹 Delete old EXRs before rendering
+  Clear-ExistingEXRs -sceneName $sceneName
+
   Write-Host "Rendering $sceneName from $startFrame to $endFrame..."
   blender42 -b "$blendFullPath" `
     --factory-startup `
@@ -30,25 +50,33 @@ function Render-BlenderScene
     -a
 }
 
-# Loop through each folder in the blender root (e.g., nikePortland, nikeChicago)
-Get-ChildItem -Path $blenderRootPath -Directory | ForEach-Object {
-  $projectFolder = $_.FullName
-  $sceneName = $_.Name  # this will be used for output folder name
-  $renderFolder = Join-Path $projectFolder "4_render"
+function RunMain
+{
+  Get-ChildItem -Path $blenderRootPath -Directory | ForEach-Object {
+    $projectFolder = $_.FullName
+    $sceneName     = $_.Name
+    $renderFolder  = Join-Path $projectFolder "4_render"
 
-  foreach ($task in $blenderTasks)
-  {
-    $blendFilePath = Join-Path $renderFolder $task.file
-
-    if (Test-Path $blendFilePath)
+    if ($blenderTasks.ContainsKey($sceneName))
     {
-      Render-BlenderScene -blendFullPath $blendFilePath `
-        -sceneName $sceneName `
-        -startFrame $task.start `
-        -endFrame $task.end
+      $task = $blenderTasks[$sceneName]
+      $blendFilePath = Join-Path $renderFolder $task.file
+
+      if (Test-Path $blendFilePath)
+      {
+        Render-BlenderScene -blendFullPath $blendFilePath `
+          -sceneName $sceneName `
+          -startFrame $task.start `
+          -endFrame $task.end
+      } else
+      {
+        Write-Warning "Missing: $blendFilePath"
+      }
     } else
     {
-      Write-Warning "Missing: $blendFilePath"
+      Write-Warning "No config entry found for scene: $sceneName"
     }
   }
 }
+
+RunMain
