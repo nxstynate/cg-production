@@ -1,9 +1,10 @@
-$projectBasePath = "X:\LocalProduction\cg-production"
-$aeProjectPath   = "$projectBasePath\4_images\2_post_production\after_effects"
-$aeFile          = "ae-post-production.aep"
-$aeisOutput    = "$projectBasePath\1_docs\5_mail_out\0000-00-00-00-00-00"
-$aeOutputFormat  = "jpg-agx"
-$aeRenderConfig  = "$projectBasePath\6_technical\1_scripting\renderConfigAfterFX.psd1"
+. "$PSScriptRoot\globalVariables.ps1"
+# $projectBasePath = "X:\LocalProduction\cg-production"
+# $aeProjectPath   = "$projectBasePath\4_images\2_post_production\after_effects"
+# $aeFile          = "ae-post-production.aep"
+# $aeisOutput    = "$projectBasePath\1_docs\5_mail_out\0000-00-00-00-00-00"
+# $aeOutputFormat  = "jpg-agx"
+# $aeRenderConfig  = "$projectBasePath\6_technical\1_scripting\sceneConfigAfterFX.psd1"
 # $aeJsxScript = "$projectBasePath\6_technical\1_scripting\cli-rendering-ae.jsx"
 
 $aeTasks = @()
