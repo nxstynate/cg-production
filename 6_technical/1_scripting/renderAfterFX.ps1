@@ -1,16 +1,9 @@
 . "$PSScriptRoot\globalVariables.ps1"
-# $projectBasePath = "X:\LocalProduction\cg-production"
-# $aeProjectPath   = "$projectBasePath\4_images\2_post_production\after_effects"
-# $aeFile          = "ae-post-production.aep"
-# $aeisOutput    = "$projectBasePath\1_docs\5_mail_out\0000-00-00-00-00-00"
-# $aeOutputFormat  = "jpg-agx"
-# $aeRenderConfig  = "$projectBasePath\6_technical\1_scripting\sceneConfigAfterFX.psd1"
-# $aeJsxScript = "$projectBasePath\6_technical\1_scripting\cli-rendering-ae.jsx"
 
 $aeTasks = @()
 try
 {
-  $aeTasks = Import-PowerShellDataFile -Path $aeRenderConfig
+  $aeTasks = (Import-PowerShellDataFile -Path $aeRenderConfig).RenderJobs
 } catch
 {
   Write-Warning "⚠️ No AE render config found. Skipping After Effects rendering."
@@ -42,10 +35,7 @@ function Render-AllAfterEffectsComps
 {
   foreach ($task in $aeTasks)
   {
-    # Render-AfterEffectsComp -isComp $task.comp ` -isS $task.start ` -isE $task.end ` -isOutput $task.output -isOmTemplate  "$aeOutputFormat"
     Render-AfterEffectsComp -isComp "$($task.comp)" -isS $($task.start) -isE $($task.end) -isOutput "$($task.output)" -isOmTemplate  "$aeOutputFormat"
-    # aerender -s "$aeJsxScript" -project "$aePath\$aeFile" -comp "$($task.comp)" -s $($task.start) -e $($task.end) -output "$aeOutputPath\$($task.output)" -OMtemplate "$aeOutputFormat"
-    # aerender -project "$aePath\$aeFile" -comp "$($task.comp)" -s $($task.start) -e $($task.end) -output "$aeisOutput\$($task.output)" -OMtemplate "$aeOutputFormat"
   }
 }
 

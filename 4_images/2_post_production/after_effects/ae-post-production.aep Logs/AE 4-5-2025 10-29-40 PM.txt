@@ -1,0 +1,12 @@
+Adobe After Effects v25.1 Windows 64 render log for project “ae-post-production.aep”
+
+Rendering started on 4/5/2025 at 10:29:40 PM
+
+  4/5/2025 10:29:40 PM: Starting composition “production-render-master”.
+
+  Render Settings: Best Settings  Quality: Best  Resolution: Full  Size: 1920 x 1080  Proxy Use: Use No Proxies  Effects: Current Settings  Disk Cache: Read Only  Color Depth: Current Settings  Frame Blending: On for Checked Layers  Field Render: Off  Pulldown: Off  Motion Blur: On for Checked Layers     Solos: Current Settings  Time Span: Custom  Start: 00000  End: 00010  Duration: 00011  Frame Rate: 29.97 (comp)  Guide Layers: All Off  Skip Existing Files: Off    Output Module: jpg-agx  Output To: X:\LocalProduction\cg-production\1_docs\5_mail_out\0000-00-00-00-00-00\production-render-master_[#####].jpg  Format: JPEG Sequence  Output Info: -  Start Frame: 0  Output Audio: -  Channels: RGB  Depth: Millions of Colors  Color: Premultiplied  Resize: -  Crop: -  Final Size: 1920 x 1080  Profile: sRGB/AgX  Embed Profile: Off     Post-Render Action: None             00000 (1): 2 Seconds  00001 (2): 0 Seconds  00002 (3): 0 Seconds  00003 (4): 1 Seconds  00004 (5): 0 Seconds  00005 (6): 0 Seconds  00006 (7): 0 Seconds  00007 (8): 1 Seconds  00008 (9): 0 Seconds  00009 (10): 0 Seconds  00010 (11): 0 Seconds  4/5/2025 10:29:44 PM: Finished composition “production-render-master”.
+
+
+  Total Time Elapsed: 4 Seconds
+Log closed on 4/5/2025 at 10:29:44 PM
+

@@ -1,11 +1,5 @@
 . "$PSScriptRoot\globalVariables.ps1"
-# $projectBasePath     = "X:\LocalProduction\cg-production"
-# $blenderRootPath     = "$projectBasePath\3_blender"
-# $blenderOutputPath   = "$projectBasePath\4_images\1_raw\1_stills"
-# $blenderPyScript     = "$projectBasePath\6_technical\1_scripting\renderConfigBlender.py" 
-# $blenderRenderFormat = "OPEN_EXR_MULTILAYER"
-# $renderConfigPath    = "$projectBasePath\6_technical\1_scripting\sceneConfigBlender.psd1"
-# $blenderTasks = Import-PowerShellDataFile -Path $renderConfigPath
+$blenderTasks = Import-PowerShellDataFile -Path $blenderRenderConfig
 
 function Clear-ExistingEXRs
 {
