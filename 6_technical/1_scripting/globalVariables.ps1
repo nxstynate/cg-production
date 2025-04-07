@@ -16,7 +16,7 @@ $aeFile           = "ae-post-production.aep"
 $aeisOutput       = "$projectBasePath\1_docs\5_mail_out\0000-00-00-00-00-00"
 $aeOutputFormat   = "jpg-agx"
 $aeRenderConfig   = "$scriptsRoot\sceneConfigAfterFX.psd1"
-$aeScript = "renderConfigAfterFX.jsx"
+$aeScript = "main.jsx"
 
 # Blender paths
 $blenderRootPath     = "$projectBasePath\3_blender"
