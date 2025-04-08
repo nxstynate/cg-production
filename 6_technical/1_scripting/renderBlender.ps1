@@ -36,7 +36,6 @@ function Render-BlenderScene
 
   Write-Host "Rendering $sceneName from $startFrame to $endFrame..."
   blender42 -b "$blendFullPath" `
-    --factory-startup `
     --python "$blenderPyScript" `
     -o "$renderOutPath" `
     -F "$fileFormat" `
