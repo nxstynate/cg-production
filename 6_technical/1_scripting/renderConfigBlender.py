@@ -2,11 +2,13 @@ import bpy
 
 ENABLED_GPU = "RTX 4080"
 DISABLED_GPUS = ["Quadro T1000"]
+DEVICE_TYPE = 'OPTIX'
 LIGHTPATHS = 8
 WIDTH = 1920
 HEIGHT = 1080
 PERCENT = 100
 SAMPLES = 32
+FRAME_RATE = 24
 
 def set_render_options():
     """Sets global render options."""
@@ -28,15 +30,45 @@ def set_render_options():
     scene.view_layers[0].cycles.use_denoising = True
     scene.render.use_placeholder = False
     scene.render.use_overwrite = True
+    scene.render.fps = FRAME_RATE
+    scene.render.fps_base = 1.0
 
-def configure_gpu_devices(enabled, disabled):
-    """Enables and disables specific GPU devices by name."""
+def configure_gpu_devices(enabled_name, disabled_names=None):
+    """Enable a specific GPU by name and disable all others."""
+    if disabled_names is None:
+        disabled_names = []
+
     prefs = bpy.context.preferences.addons['cycles'].preferences
-    prefs.compute_device_type = 'OPTIX'
+
+    # Set device type to 'CUDA' or 'OPTIX'
+    if DEVICE_TYPE in {'CUDA', 'OPTIX'}:
+        prefs.compute_device_type = DEVICE_TYPE
+    else:
+        raise ValueError(f"Unsupported device type: {DEVICE_TYPE}")
+
+    # Ensure devices are detected
+    bpy.context.preferences.addons['cycles'].preferences.get_devices()
+    found_enabled = False
+
     for device in prefs.devices:
-        device.use = device.name == enabled and device.name not in disabled
-    print(f"Enabled GPU: {[d.name for d in prefs.devices if d.use]}")
-    print(f"Disabled GPU: {[d.name for d in prefs.devices if not d.use]}")
+        if device.name == enabled_name:
+            device.use = True
+            found_enabled = True
+        elif device.name in disabled_names:
+            device.use = False
+        else:
+            device.use = False  # Disable anything not explicitly named
+
+    if not found_enabled:
+        print(f"[Warning] GPU '{enabled_name}' was not found among available devices.")
+
+    # Summary printout
+    enabled = [d.name for d in prefs.devices if d.use]
+    disabled = [d.name for d in prefs.devices if not d.use]
+
+    print(f"[Render Device: {DEVICE_TYPE}]")
+    print(f"Enabled GPUs: {enabled}")
+    print(f"Disabled GPUs: {disabled}")
 
 def run():
     set_render_options()
