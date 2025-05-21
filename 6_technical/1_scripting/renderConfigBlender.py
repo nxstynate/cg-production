@@ -7,7 +7,7 @@ LIGHTPATHS = 8
 WIDTH = 1920
 HEIGHT = 1080
 PERCENT = 100
-SAMPLES = 32
+SAMPLES = 256
 FRAME_RATE = 24
 
 def set_render_options():
