@@ -9,6 +9,7 @@ HEIGHT = 1080
 PERCENT = 100
 SAMPLES = 256
 FRAME_RATE = 24
+TRANSPARENT_BACKGROUND = False
 
 def set_render_options():
     """Sets global render options."""
@@ -32,6 +33,7 @@ def set_render_options():
     scene.render.use_overwrite = True
     scene.render.fps = FRAME_RATE
     scene.render.fps_base = 1.0
+    scene.render.film_transparent = TRANSPARENT_BACKGROUND
 
 def configure_gpu_devices(enabled_name, disabled_names=None):
     """Enable a specific GPU by name and disable all others."""
