@@ -6,6 +6,7 @@
 #include "./organizeProject.jsx"
 #include "./setExtractor.jsx"
 #include "./compDurationOfFootage.jsx"
+#include "./interpretFootage.jsx.jsx"
 
 function Main() {
   CreateCompsFromSequences()
@@ -14,6 +15,7 @@ function Main() {
   updateAllExtractors()
   RefreshAllFootage()
   matchCompDurationsToFootage()
+  InterpretFootage()
   OrganizeProject()
   SaveProject()
 }
