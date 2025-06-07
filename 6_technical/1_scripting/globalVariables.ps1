@@ -14,7 +14,7 @@ $fileExtensionsAE = "jpeg"
 $aeProjectPath    = "$projectBasePath\4_images\2_post_production\after_effects"
 $aeFile           = "ae-post-production.aep"
 $aeisOutput       = "$projectBasePath\1_docs\5_mail_out\0000-00-00-00-00-00"
-$aeOutputFormat   = "jpg-agx"
+$aeOutputFormat   = "jpg-khronos"
 $aeRenderConfig   = "$scriptsRoot\sceneConfigAfterFX.psd1"
 $aeScript = "main.jsx"
 

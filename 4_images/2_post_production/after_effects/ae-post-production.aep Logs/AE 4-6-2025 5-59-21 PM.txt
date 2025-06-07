@@ -1,16 +1,0 @@
-Adobe After Effects v25.1 Windows 64 render log for project “ae-post-production.aep”
-
-Rendering started on 4/6/2025 at 5:59:21 PM
-
-  4/6/2025 5:59:21 PM: Starting composition “production”.
-
-  Render Settings: Best Settings  Quality: Best  Resolution: Full  Size: 1920 x 1080  Proxy Use: Use No Proxies  Effects: Current Settings  Disk Cache: Read Only  Color Depth: Current Settings  Frame Blending: On for Checked Layers  Field Render: Off  Pulldown: Off  Motion Blur: On for Checked Layers     Solos: Current Settings  Time Span: Custom  Start: 00000  End: 00002  Duration: 00003  Frame Rate: 29.97 (comp)  Guide Layers: All Off  Skip Existing Files: Off    Output Module: jpg-agx  Output To: X:\LocalProduction\cg-production\1_docs\5_mail_out\0000-00-00-00-00-00\produciton_[#####].jpg  Format: JPEG Sequence  Output Info: -  Start Frame: 0  Output Audio: -  Channels: RGB  Depth: Millions of Colors  Color: Premultiplied  Resize: -  Crop: -  Final Size: 1920 x 1080  Profile: sRGB/AgX  Embed Profile: Off     Post-Render Action: None           After Effects error: Unable to Render: File Not Found X:\LocalProduction\cg-production\4_images\1_raw\1_stills\render_0001.exrAfter Effects error: Unable to Render: File Not Found X:\LocalProduction\cg-production\4_images\1_raw\1_stills\render_0001.exrAfter Effects error: Unable to Render: File Not Found X:\LocalProduction\cg-production\4_images\1_raw\1_stills\render_0001.exr  An unexpected error occurred while exporting a composition.
-
-Error Code: 1
-
-Please restart After Effects and retry the export.  4/6/2025 5:59:22 PM: Finished composition “production”.
-
-
-  Total Time Elapsed: 
-Log closed on 4/6/2025 at 5:59:22 PM
-
