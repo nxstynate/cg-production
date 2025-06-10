@@ -1,9 +1,10 @@
 import bpy
 
+
+# Settings Variables:
 ENABLED_GPU = "RTX 4080"
 DISABLED_GPUS = ["Quadro T1000"]
 DEVICE_TYPE = 'OPTIX'
-LIGHTPATHS = 8
 WIDTH = 1920
 HEIGHT = 1080
 PERCENT = 100
@@ -11,18 +12,26 @@ MAX_SAMPLES = 8192
 MIN_SAMPLES = 64
 NOISE_THRESHOLD = 0.0100
 FRAME_RATE = 24
+
+# Settings LightPaths Variables:
 TRANSPARENT_BACKGROUND = False
+MAX_BOUNCES = 32
+DIFFUSE_BOUNCES = 8
+GLOSSY_BOUNCES = 32
+TRANSMISSION_BOUNCES = 32
+VOLUME_BOUNCES = 4
+TRANSPARENT_MAX_BOUNCES = 16
 
 def set_render_options():
     """Sets global render options."""
     scene = bpy.context.scene
     paths = bpy.context.scene.cycles
-    paths.max_bounces = LIGHTPATHS
-    paths.diffuse_bounces = LIGHTPATHS
-    paths.glossy_bounces = LIGHTPATHS
-    paths.transparent_max_bounces = LIGHTPATHS
-    paths.transmission_bounces = LIGHTPATHS
-    paths.volume_bounces = LIGHTPATHS
+    paths.max_bounces = MAX_BOUNCES
+    paths.diffuse_bounces = DIFFUSE_BOUNCES
+    paths.glossy_bounces = GLOSSY_BOUNCES
+    paths.transparent_max_bounces = TRANSPARENT_MAX_BOUNCES
+    paths.transmission_bounces = TRANSMISSION_BOUNCES
+    paths.volume_bounces = VOLUME_BOUNCES
     paths.use_fast_gi = False
     scene.render.engine = 'CYCLES'
     scene.render.resolution_x = WIDTH
