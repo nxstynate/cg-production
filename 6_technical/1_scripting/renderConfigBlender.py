@@ -7,7 +7,9 @@ LIGHTPATHS = 8
 WIDTH = 1920
 HEIGHT = 1080
 PERCENT = 100
-SAMPLES = 256
+MAX_SAMPLES = 8192
+MIN_SAMPLES = 64
+NOISE_THRESHOLD = 0.0100
 FRAME_RATE = 24
 TRANSPARENT_BACKGROUND = False
 
@@ -27,7 +29,9 @@ def set_render_options():
     scene.render.resolution_y = HEIGHT
     scene.render.resolution_percentage = PERCENT  # 100% = full resolution
     scene.render.use_motion_blur = False
-    scene.cycles.samples = SAMPLES
+    scene.cycles.adaptive_threshold = NOISE_THRESHOLD
+    scene.cycles.samples = MAX_SAMPLES
+    scene.cycles.adaptive_min_samples = MIN_SAMPLES
     scene.view_layers[0].cycles.use_denoising = True
     scene.render.use_placeholder = False
     scene.render.use_overwrite = True
