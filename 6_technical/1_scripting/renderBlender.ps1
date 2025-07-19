@@ -35,7 +35,7 @@ function Render-BlenderScene
   Clear-ExistingEXRs -sceneName $sceneName
 
   Write-Host "Rendering $sceneName from $startFrame to $endFrame..."
-  blender42 -b "$blendFullPath" `
+  blender45 -b "$blendFullPath" `
     --python "$blenderPyScript" `
     -o "$renderOutPath" `
     -F "$fileFormat" `
