@@ -1,0 +1,4 @@
+
+# ignore all rendered files in the folder.
+4_images/1_raw/1_stills/*
+!4_images/1_raw/1_stills/.gitkeep
